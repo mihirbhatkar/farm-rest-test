@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+
+		<link
+			href="https://fonts.googleapis.com/css?family=Open Sans"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../../output.css" />
+	</head>
+	<body class="min-h-screen bg-slate-50">
+		<header
+			style="
+				background-image: linear-gradient(
+					to right top,
+					#b5f1cc,
+					#c2f4cc,
+					#cef7cd,
+					#dafacf,
+					#e5fdd1
+				);
+			"
+			class="text-white"></header>
+
+		<p>Welcome, <%= username%></p>
+		<div class="dashboard m-5 grid h-[85vh] grid-cols-[70%_30%] gap-5 p-5">
+			<div class="orders h-auto rounded-xl border-2 border-slate-500 p-5">
+				<div class="orderHeader m-2 w-full text-center">
+					<strong>Orders</strong>
+				</div>
+				<div class="orderDetails flex h-auto flex-col flex-wrap gap-2">
+					<a href="" class="rounded-xl border-2 border-slate-800 p-2"
+						>order1</a
+					>
+					<a href="" class="rounded-xl border-2 border-slate-800 p-2"
+						>order2</a
+					>
+					<a href="" class="rounded-xl border-2 border-slate-800 p-2"
+						>order3</a
+					>
+				</div>
+			</div>
+			<div class="others grid h-auto grid-rows-[50%_auto] gap-5">
+				<div
+					class="subscriptions rounded-xl border-2 border-slate-500 p-2">
+					Subscriptions</div
+				>
+				<div
+					class="announcements rounded-xl border-2 border-slate-500 p-2">
+					Announcements</div
+				>
+			</div>
+		</div>
+		<script
+			src="https://kit.fontawesome.com/330aa1236c.js"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
